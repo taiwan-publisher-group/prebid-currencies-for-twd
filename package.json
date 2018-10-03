@@ -6,7 +6,11 @@
     "typescript": "^3.1.1"
   },
   "dependencies": {
+    "@octokit/rest": "^15.12.1",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
+  },
+  "scripts": {
+    "deploy": "tsc && gcloud functions deploy updateConversionFile --trigger-topic daily-tick"
   }
 }
