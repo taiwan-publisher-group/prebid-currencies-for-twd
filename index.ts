@@ -25,11 +25,11 @@ exports.updateConversionFile = async () => {
     const body = await request('https://rate.bot.com.tw/xrt/flcsv/0/day');
     const usdInfo = body.split(/\r?\n/)[1];
     const data = {dataAsOf: new Date().toLocaleDateString(), conversions: {USD: {TWD: usdInfo.split(',')[2]}}};
-    const lastCommit = await octokit.gitdata.getReference({owner, repo, ref});
+    const lastCommit = await octokit.gitdata.getRef({owner, repo, ref});
     const shaLastCommit = lastCommit.data.object.sha;
     const shaBaseTree = await octokit.gitdata.getCommit({owner, repo, commit_sha: shaLastCommit});
     const blob = await octokit.gitdata.createBlob({owner, repo, content: JSON.stringify(data)});
     const shaNewTree = await octokit.gitdata.createTree({owner, repo, base_tree: shaBaseTree.data.sha, tree: [{path, mode, type: 'blob', sha: blob.data.sha}]});
     const shaNewCommit = await octokit.gitdata.createCommit({owner, repo, message, tree: shaNewTree.data.sha, parents: [shaLastCommit]});
-    const newCommit = await octokit.gitdata.updateReference({owner, repo, ref, sha: shaNewCommit.data.sha});
+    const newCommit = await octokit.gitdata.updateRef({owner, repo, ref, sha: shaNewCommit.data.sha});
 };
