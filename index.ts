@@ -26,7 +26,7 @@ exports.updateConversionFile = async () => {
   const usdInfo = body.split(/\r?\n/)[1];
   const data = {
     dataAsOf: new Date().toLocaleDateString(),
-    conversions: { USD: { TWD: usdInfo.split(",")[2] } }
+    conversions: { USD: { TWD: usdInfo.split(",")[3] } }
   };
   const lastCommit = await octokit.gitdata.getRef({ owner, repo, ref });
   const shaLastCommit = lastCommit.data.object.sha;
