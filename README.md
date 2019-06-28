@@ -18,10 +18,10 @@ Prebid.js 所支援的 bidder 多數是以美金計價，若後台 Ad Manager �
 
 ```js
 {
-	currency: {
-		adServerCurrency: 'TWD',
-		conversionRateFile: 'https://taiwan-publisher-group.github.io/prebid-currencies-for-twd/latest.json'
-	}
+  currency: {
+    adServerCurrency: 'TWD',
+    conversionRateFile: 'https://cdn.jsdelivr.net/gh/taiwan-publisher-group/prebid-currencies-for-twd/docs/latest.json'
+  }
 }
 ```
 
