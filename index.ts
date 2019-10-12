@@ -2,7 +2,6 @@ import * as request from "request-promise";
 import { promises } from "fs";
 
 const path = "docs/latest.json";
-const mode = "100644";
 
 request("https://rate.bot.com.tw/xrt/flcsv/0/day")
   .then(body => {
