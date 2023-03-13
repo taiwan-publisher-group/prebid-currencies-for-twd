@@ -6,14 +6,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js 10.x
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
       with:
-        node-version: '10.x'
+        node-version-file: '.tool-versions'
     - name: yarn install then build
       run: |
-        yarn install
+        yarn install --immutable
         yarn build
     - uses: mikeal/publish-to-github-action@master
       env:
