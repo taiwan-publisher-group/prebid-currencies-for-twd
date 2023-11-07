@@ -74,10 +74,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.14.tgz#5465ce598486a703caddbefe8603f8a2cffa3461"
   integrity sha512-wvzClDGQXOCVNU4APPopC2KtMYukaF1MN/W3xAmslx22Z4/IF1/izDMekuyoUlwfnDHYCIZGaj7jMwnJKBTxKw==
 
-"@types/request-promise@^4.1.49":
-  version "4.1.49"
-  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.49.tgz#788aaa5edd5e8de059090c0e1907dbab16e03609"
-  integrity sha512-VoQ8056EAAoxVArxA+0WRykR4VNv5cUuORusIXhjOtGpkNdEUVPIzdvQyyAc/yj/kT8rwMdxLMKPkcjhDubvJw==
+"@types/request-promise@^4.1.51":
+  version "4.1.51"
+  resolved "https://registry.yarnpkg.com/@types/request-promise/-/request-promise-4.1.51.tgz#a6bb43289569de84055073757d37a8fd6146bfe3"
+  integrity sha512-qVcP9Fuzh9oaAh8oPxiSoWMFGnWKkJDknnij66vi09Yiy62bsSDqtd+fG5kIM9wLLgZsRP3Y6acqj9O/v2ZtRw==
   dependencies:
     "@types/bluebird" "*"
     "@types/request" "*"

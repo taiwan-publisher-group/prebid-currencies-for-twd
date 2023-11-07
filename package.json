@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@types/node": "^16.1",
-    "@types/request-promise": "^4.1.49",
+    "@types/request-promise": "^4.1.51",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "ts-node": "^10.9.1",
