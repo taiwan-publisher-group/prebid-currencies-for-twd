@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@types/node": "^16.1",
+    "@types/node": "^20.10",
     "@types/request-promise": "^4.1.49",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
