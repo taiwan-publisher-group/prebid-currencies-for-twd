@@ -4,7 +4,7 @@
     "@types/request-promise": "^4.1.49",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^3.5.2"
   },
   "engines": {
